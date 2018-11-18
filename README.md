@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/susanalado/java-etherpad-lite.svg?branch=master)](https://travis-ci.org/susanalado/java-etherpad-lite)
+
+[![Coverage Status](https://coveralls.io/repos/github/susanalado/java-etherpad-lite/badge.svg?branch=master)](https://coveralls.io/github/susanalado/java-etherpad-lite?branch=master)
+
+
 Java Etherpad Lite Client
 =========================
 
@@ -56,4 +61,4 @@ of a04f17343b51afaa036a7428171dd873469cd85911ab43be0503d29d2acbbd58
 
 Integration tests are not run using `maven test`.
 
-[![Build Status](https://travis-ci.org/susanalado/java-etherpad-lite.svg?branch=master)](https://travis-ci.org/susanalado/java-etherpad-lite)
+
