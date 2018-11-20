@@ -702,7 +702,7 @@ public class EPLiteClientIntegrationTest {
                      HttpResponse.response()
                      .withStatusCode(201)
                      .withBody("{\"code\":0,\"message\":\"ok\",\"data\":{\"text\":\"gå å gjør et ærend\\n\"}}",
-                               Charset.forName("ISO-8859-1"))
+                               Charset.forName("UTF-8"))
                      );
         mockServer
             .when(
@@ -769,7 +769,7 @@ public class EPLiteClientIntegrationTest {
                      HttpResponse.response()
                      .withStatusCode(201)
                      .withBody("{\"code\":0,\"message\":\"ok\",\"data\":\"Z:1>r|1+r$gå og gjøre et ærend igjen\n\"}",
-                               Charset.forName("ISO-8859-1"))
+                               Charset.forName("UTF-8"))
                      );
         mockServer
             .when(
@@ -814,7 +814,7 @@ public class EPLiteClientIntegrationTest {
                      HttpResponse.response()
                      .withStatusCode(201)
                      .withBody("{\"code\":0,\"message\":\"ok\",\"data\":{\"text\":\"gå og gjøre et ærend igjen\\nlagt til nå\\n\"}}",
-                               Charset.forName("ISO-8859-1"))
+                               Charset.forName("UTF-8"))
                      );
         mockServer
             .when(
@@ -1328,7 +1328,7 @@ public class EPLiteClientIntegrationTest {
                      HttpResponse.response()
                      .withStatusCode(201)
                      .withBody("{\"code\":0,\"message\":\"ok\",\"data\":{\"messages\":[{\"text\":\"hi from user1\",\"userId\":\"a.UQLumMigmWReonxg\",\"time\":1541863985955,\"userName\":\"integration-author-1\"},{\"text\":\"hi from user2\",\"userId\":\"a.OeyYMMVD6KYHJ0oe\",\"time\":1541863985,\"userName\":\"integration-author-2\"},{\"text\":\"gå å gjør et ærend\",\"userId\":\"a.UQLumMigmWReonxg\",\"time\":1541863985,\"userName\":\"integration-author-1\"}]}}",
-                               Charset.forName("ISO-8859-1"))
+                               Charset.forName("UTF-8"))
                      );
         mockServer
             .when(
