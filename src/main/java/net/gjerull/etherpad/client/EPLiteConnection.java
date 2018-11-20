@@ -18,6 +18,7 @@ import javax.net.ssl.X509TrustManager;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+
 /**
  * Connection object for talking to and parsing responses from the Etherpad Lite Server.
  */
