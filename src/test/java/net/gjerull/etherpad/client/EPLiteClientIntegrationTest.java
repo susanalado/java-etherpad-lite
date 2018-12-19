@@ -18,12 +18,19 @@ import org.mockserver.integration.ClientAndServer;
 import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import org.mockserver.matchers.Times;
 
+import etm.core.monitor.EtmMonitor;
+import etm.core.configuration.EtmManager;
+import etm.core.configuration.BasicEtmConfigurator;
+import etm.core.renderer.SimpleTextRenderer;
+
+
 /**
  * Integration test for simple App.
  */
 public class EPLiteClientIntegrationTest {
     private EPLiteClient client;
     private ClientAndServer mockServer;
+    private EtmMonitor monitor;
 
     /**
      * Useless testing as it depends on a specific API key
@@ -39,14 +46,20 @@ public class EPLiteClientIntegrationTest {
         
         ((ch.qos.logback.classic.Logger) org.slf4j.LoggerFactory
                 .getLogger("org.mockserver.mock"))
-                   .setLevel(ch.qos.logback.classic.Level.OFF);
+        		.setLevel(ch.qos.logback.classic.Level.OFF); 
         
         mockServer = startClientAndServer(9001);
+        
+        BasicEtmConfigurator.configure();
+        monitor = EtmManager.getEtmMonitor();
+        monitor.start();
     }
 
     @After
     public void tearDown() {
         mockServer.stop();
+        monitor.render(new SimpleTextRenderer());
+        monitor.stop();
     }
 
     @Test
