@@ -16,7 +16,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.7</java.version>
-<!--     <graphwalker.version>3.4.2</graphwalker.version> -->
+    <graphwalker.version>3.4.2</graphwalker.version>
   </properties>
 
   <licenses>
@@ -96,26 +96,17 @@
       <version>3.4.2</version>
 	</dependency>
     
-<!--     <dependency> -->
-<!-- 		<groupId>org.graphwalker</groupId> -->
-<!-- 		<artifactId>graphwalker-core</artifactId> -->
-<!-- 		<version>${graphwalker.version}</version> -->
-<!-- 	</dependency> -->
-<!-- 	<dependency> -->
-<!-- 		<groupId>org.graphwalker</groupId> -->
-<!-- 		<artifactId>graphwalker-io</artifactId> -->
-<!-- 		<version>${graphwalker.version}</version> -->
-<!-- 	</dependency> -->
-<!-- 	<dependency> -->
-<!-- 		<groupId>org.graphwalker</groupId> -->
-<!-- 		<artifactId>graphwalker-java</artifactId> -->
-<!-- 		<version>${graphwalker.version}</version> -->
-<!-- 	</dependency> -->
-<!-- 	<dependency> -->
-<!-- 		<groupId>org.graphwalker</groupId> -->
-<!-- 		<artifactId>graphwalker-maven-plugin</artifactId> -->
-<!-- 		<version>${graphwalker.version}</version> -->
-<!-- 	</dependency> -->
+	<dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-io</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-maven-plugin</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
     
     <dependency>
       <groupId>com.google.code.jetm</groupId>
@@ -247,20 +238,20 @@
         <version>3.1.9</version>
       </plugin>
       
-<!--       <plugin> -->
-<!--         <groupId>org.graphwalker</groupId> -->
-<!--         <artifactId>graphwalker-maven-plugin</artifactId> -->
-<!--         <version>3.4.2</version> -->
-<!--         <executions> -->
-<!--           <execution> -->
-<!--             <id>generate-sources</id> -->
-<!--             <phase>generate-sources</phase> -->
-<!--             <goals> -->
-<!--               <goal>generate-sources</goal> -->
-<!--             </goals> -->
-<!--           </execution> -->
-<!--         </executions> -->
-<!--       </plugin> -->
+      <plugin>
+        <groupId>org.graphwalker</groupId>
+        <artifactId>graphwalker-maven-plugin</artifactId>
+        <version>3.4.2</version>
+        <executions>
+          <execution>
+            <id>generate-sources</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>generate-sources</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       
     </plugins>
   </build>
