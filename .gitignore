@@ -6,3 +6,4 @@ release.properties
 *.iml
 .idea/
 .settings/
+src/test/java/net/gjerull/etherpad/client/EPLiteClientIntegrationTest.java
