@@ -8,15 +8,15 @@
 
   <name>Etherpad Lite Client</name>
   <description>
-    A Java client for Etherpad Liteâ€™s HTTP JSON API.
+    A Java client for Etherpad Lites HTTP JSON API.
     Etherpad Lite is a collaborative editor provided by the Etherpad Foundation.
   </description>
   <url>http://github.com/nilsfr/java-etherpad-lite</url>
 
   <properties>
-    <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.7</java.version>
-    <graphwalker.version>3.4.2</graphwalker.version>
+<!--     <graphwalker.version>3.4.2</graphwalker.version> -->
   </properties>
 
   <licenses>
@@ -86,43 +86,42 @@
     </dependency>
     
     <dependency>
-		<groupId>org.graphwalker</groupId>
-		<artifactId>graphwalker-core</artifactId>
-		<version>${graphwalker.version}</version>
+      <groupId>org.graphwalker</groupId>
+      <artifactId>graphwalker-core</artifactId>
+      <version>3.4.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.graphwalker</groupId>
+      <artifactId>graphwalker-java</artifactId>
+      <version>3.4.2</version>
 	</dependency>
-	<dependency>
-		<groupId>org.graphwalker</groupId>
-		<artifactId>graphwalker-io</artifactId>
-		<version>${graphwalker.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.graphwalker</groupId>
-		<artifactId>graphwalker-java</artifactId>
-		<version>${graphwalker.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.graphwalker</groupId>
-		<artifactId>graphwalker-maven-plugin</artifactId>
-		<version>${graphwalker.version}</version>
-	</dependency>
+    
+<!--     <dependency> -->
+<!-- 		<groupId>org.graphwalker</groupId> -->
+<!-- 		<artifactId>graphwalker-core</artifactId> -->
+<!-- 		<version>${graphwalker.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.graphwalker</groupId> -->
+<!-- 		<artifactId>graphwalker-io</artifactId> -->
+<!-- 		<version>${graphwalker.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.graphwalker</groupId> -->
+<!-- 		<artifactId>graphwalker-java</artifactId> -->
+<!-- 		<version>${graphwalker.version}</version> -->
+<!-- 	</dependency> -->
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.graphwalker</groupId> -->
+<!-- 		<artifactId>graphwalker-maven-plugin</artifactId> -->
+<!-- 		<version>${graphwalker.version}</version> -->
+<!-- 	</dependency> -->
     
     <dependency>
       <groupId>com.google.code.jetm</groupId>
       <artifactId>jetm-maven-plugin</artifactId>
       <version>1.0.2</version>
     </dependency>
-    
-<!--     <dependency> -->
-<!--       <groupId>org.graphwalker</groupId> -->
-<!--       <artifactId>graphwalker-core</artifactId> -->
-<!--       <version>3.4.2</version> -->
-<!--     </dependency> -->
-    
-<!--     <dependency> -->
-<!--       <groupId>org.graphwalker</groupId> -->
-<!--       <artifactId>graphwalker-java</artifactId> -->
-<!--       <version>3.4.2</version> -->
-<!--     </dependency> -->
     
   </dependencies>
 

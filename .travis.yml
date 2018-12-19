@@ -1,3 +1,5 @@
 language: java
+script:
+  - mvn graphwalker:generate-sources test graphwalker:test
 after_success:
-- mvn jacoco:report coveralls:report 
+- mvn jacoco:report coveralls:report
