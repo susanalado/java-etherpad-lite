@@ -14,8 +14,9 @@
   <url>http://github.com/nilsfr/java-etherpad-lite</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     <java.version>1.7</java.version>
+    <graphwalker.version>3.4.2</graphwalker.version>
   </properties>
 
   <licenses>
@@ -83,6 +84,27 @@
       <artifactId>junit-quickcheck-generators</artifactId>
       <version>0.8.1</version>
     </dependency>
+    
+    <dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-core</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-io</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-java</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.graphwalker</groupId>
+		<artifactId>graphwalker-maven-plugin</artifactId>
+		<version>${graphwalker.version}</version>
+	</dependency>
     
     <dependency>
       <groupId>com.google.code.jetm</groupId>

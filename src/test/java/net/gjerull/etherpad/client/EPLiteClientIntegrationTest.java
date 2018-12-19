@@ -684,7 +684,7 @@ public class EPLiteClientIntegrationTest {
     @Test
     public void create_pad_set_and_get_content() {
     	
-    	String coding = "UTF-8"; //UTF-8 for travis, ISO-8859-1 for my pc
+    	String coding = "ISO-8859-1"; //UTF-8 for travis, ISO-8859-1 for my pc
     	
         mockServer
             .when(
@@ -1280,7 +1280,7 @@ public class EPLiteClientIntegrationTest {
     @Test
     public void create_pad_and_chat_about_it() {
     	
-    	String coding = "UTF-8"; //UTF-8 travis, ISO-8859-1 my computer
+    	String coding = "ISO-8859-1"; //UTF-8 travis, ISO-8859-1 my computer
     	
         mockServer
             .when(

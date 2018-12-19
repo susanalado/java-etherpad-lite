@@ -16,7 +16,7 @@ public class EPLiteConnectionTest {
             "  \"data\": %s\n" +
             "}";
     private static final String API_VERSION = "1.2.12";
-    private static final String ENCODING = "UTF-8";
+    private static final String ENCODING = "ISO-8859-1";
 
     @Test
     public void domain_with_trailing_slash_when_construction_an_api_path() throws Exception {
